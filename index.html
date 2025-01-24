@@ -20,6 +20,19 @@
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+        .main-content {
+            flex: 3;
+        }
+        .skills-section {
+            flex: 1;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
         .header {
             text-align: center;
@@ -85,53 +98,85 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Ramananda Panda</h1>
-            <p>Full Stack Developer | MEAN | MERN</p>
-            <p>Email: <a href="mailto:ramanandapanda92@gmail.com">ramanandapanda92@gmail.com</a> | Phone: +91-7619 577 977</p>
-            <p>LinkedIn: <a href="https://in.linkedin.com/in/ramananda-panda" target="_blank">linkedin.com/in/ramananda-panda</a> | GitHub: <a href="https://github.com/rp01" target="_blank">github.com/rp01</a></p>
+        <div class="main-content">
+            <div class="header">
+                <h1>Ramananda Panda</h1>
+                <p>Full Stack Developer | MEAN | MERN</p>
+                <p>Email: <a href="mailto:ramanandapanda92@gmail.com">ramanandapanda92@gmail.com</a> | Phone: +91-7619 577 977</p>
+                <p>LinkedIn: <a href="https://in.linkedin.com/in/ramananda-panda" target="_blank">linkedin.com/in/ramananda-panda</a> | GitHub: <a href="https://github.com/rp01" target="_blank">github.com/rp01</a></p>
+            </div>
+
+            <div class="section">
+                <h2>Professional Summary</h2>
+                <p>Industrious Senior Engineer with extensive experience in Golang, Node.js, Flutter, and PHP. Proven expertise in designing scalable systems, solving technical challenges, and leading cross-functional teams. Adept at delivering projects from concept to completion with measurable results.</p>
+            </div>
+
+            <div class="section">
+                <h2>Work Experience</h2>
+                <ul>
+                    <li>
+                        <strong>Senior Engineer</strong> - Kaplan India Pvt Ltd (May 2021 - Present)<br>- Optimized system performance, improving scalability by 20% through refactoring.<br>- Worked on fixing Snyk and Orca vulnerabilities across the system.<br>
+                        - Led UI migration from Angular 12 to 17, enhancing maintainability and user experience.<br>
+                        - Created a whole new design system used across all frontend applications.<br>
+                        - Revamped CI/CD pipelines using EKS, GitHub Actions, and ArgoCD.<br>
+                        - Mentored a team of 10 developers and collaborated on full-stack projects.
+                    </li>
+                    <li>
+                        <strong>Senior Developer</strong> - Elatior Tech LLP Ltd (Aug 2019 - May 2021)<br>
+                        - Designed technology architecture for supply chain systems.<br>
+                        - Acted as a key stakeholder in strategic design decisions.<br>
+                        - Led cross-functional teams to deliver high-quality software products.
+                    </li>
+                    <li>
+                        <strong>Software Engineer</strong> - IT People Corporation Pvt. Ltd. (May 2017 - Jul 2019)<br>
+                        - Directed software design and collaborated closely with clients to deliver robust solutions.<br>
+                        - Led team initiatives to resolve critical bugs, ensuring smoother system operations.
+                    </li>
+                    <li>
+                        <strong>PHP Developer</strong> - KTree Computer Solutions India (Feb 2015 - Apr 2017)<br>
+                        - Implemented SEO strategies, improving search rankings for client websites.<br>
+                        - Developed and maintained task tracking systems using Node.js and Backbone.js.
+                    </li>
+                    <li>
+                        <strong>Software Trainee</strong> - Anika IT Solutions Pvt.Ltd (Sep 2013 - Feb 2015)<br>
+                        - Gained expertise in PHP frameworks and healthcare-based web solutions.<br>
+                        - Created and deployed 5 websites, delivering quality results within deadlines.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Personal Projects</h2>
+                <ul>
+                    <li>
+                        <strong>Zotit App</strong> - <a href="https://zotit.app" target="_blank">zotit.app</a> (Cross-platform)<br>
+                        - Developed a cross-platform application for Android, iOS, Firefox, Chrome (browser extensions), and web (<a href="https://web.zotit.app" target="_blank">web.zotit.app</a>) using Flutter for the frontend and Golang for the backend.<br>
+                        - Open-sourced the UI for broader developer collaboration.
+                    </li>
+                    <li>
+                        <strong>Fake Request</strong> - <a href="https://fakerequest.com" target="_blank">fakerequest.com</a><br>
+                        - Built a platform to generate fake API endpoints based on JSON input.<br>
+                        - Used Laravel for the backend and React.js for the frontend.<br>
+                        - Simplified prototyping for developers and enabled quick integration testing.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Accomplishments</h2>
+                <ul>
+                    <li>Identified and solved critical security vulnerabilities, deploying multiple software patches.</li>
+                    <li>Mentored 5 new employees, accelerating project delivery timelines.</li>
+                    <li>Streamlined team workflows, improving productivity by 15%.</li>
+                </ul>
+            </div>
+
+            <div class="contact">
+                <p>Portfolio: <a href="https://rp01.in" target="_blank">RP01.in</a></p>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Industrious Senior Engineer with extensive experience in Golang, Node.js, Flutter, and PHP. Proven expertise in designing scalable systems, solving technical challenges, and leading cross-functional teams. Adept at delivering projects from concept to completion with measurable results.</p>
-        </div>
-
-        <div class="section">
-            <h2>Work Experience</h2>
-            <ul>
-                <li>
-                    <strong>Senior Engineer</strong> - Kaplan India Pvt Ltd (May 2021 - Present)<br>- Optimized system performance, improving scalability by 20% through refactoring.<br>- Worked on fixing Snyk and Orca vulnerabilities across the system.<br>
-                    - Led UI migration from Angular 12 to 17, enhancing maintainability and user experience.<br>
-                    - Created a whole new design system used across all frontend applications.<br>
-                    - Revamped CI/CD pipelines using EKS, GitHub Actions, and ArgoCD.<br>
-                    - Mentored a team of 10 developers and collaborated on full-stack projects.
-                </li>
-                <li>
-                    <strong>Senior Developer</strong> - Elatior Tech LLP Ltd (Aug 2019 - May 2021)<br>
-                    - Designed technology architecture for supply chain systems.<br>
-                    - Acted as a key stakeholder in strategic design decisions.<br>
-                    - Led cross-functional teams to deliver high-quality software products.
-                </li>
-                <li>
-                    <strong>Software Engineer</strong> - IT People Corporation Pvt. Ltd. (May 2017 - Jul 2019)<br>
-                    - Directed software design and collaborated closely with clients to deliver robust solutions.<br>
-                    - Led team initiatives to resolve critical bugs, ensuring smoother system operations.
-                </li>
-                <li>
-                    <strong>PHP Developer</strong> - KTree Computer Solutions India (Feb 2015 - Apr 2017)<br>
-                    - Implemented SEO strategies, improving search rankings for client websites.<br>
-                    - Developed and maintained task tracking systems using Node.js and Backbone.js.
-                </li>
-                <li>
-                    <strong>Software Trainee</strong> - Anika IT Solutions Pvt.Ltd (Sep 2013 - Feb 2015)<br>
-                    - Gained expertise in PHP frameworks and healthcare-based web solutions.<br>
-                    - Created and deployed 5 websites, delivering quality results within deadlines.
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
+        <div class="skills-section">
             <h2>Skills</h2>
             <div class="skills">
                 <span>Golang</span>
@@ -151,36 +196,6 @@
                 <span>PostgreSQL</span>
                 <span>MongoDB</span>
             </div>
-        </div>
-
-        <div class="section">
-            <h2>Personal Projects</h2>
-            <ul>
-                <li>
-                    <strong>Zotit App</strong> - <a href="https://zotit.app" target="_blank">zotit.app</a> (Cross-platform)<br>
-                    - Developed a cross-platform application for Android, iOS, Firefox, Chrome (browser extensions), and web (<a href="https://web.zotit.app" target="_blank">web.zotit.app</a>) using Flutter for the frontend and Golang for the backend.<br>
-                    - Open-sourced the UI for broader developer collaboration.
-                </li>
-                <li>
-                    <strong>Fake Request</strong> - <a href="https://fakerequest.com" target="_blank">fakerequest.com</a><br>
-                    - Built a platform to generate fake API endpoints based on JSON input.<br>
-                    - Used Laravel for the backend and React.js for the frontend.<br>
-                    - Simplified prototyping for developers and enabled quick integration testing.
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h2>Accomplishments</h2>
-            <ul>
-                <li>Identified and solved critical security vulnerabilities, deploying multiple software patches.</li>
-                <li>Mentored 5 new employees, accelerating project delivery timelines.</li>
-                <li>Streamlined team workflows, improving productivity by 15%.</li>
-            </ul>
-        </div>
-
-        <div class="contact">
-            <p>Portfolio: <a href="https://rp01.in" target="_blank">RP01.in</a></p>
         </div>
     </div>
 </body>
