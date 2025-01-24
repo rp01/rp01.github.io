@@ -94,6 +94,20 @@
             text-decoration: none;
             color: #3498db;
         }
+        @media print {
+            @page {
+                margin: 10mm;
+            }
+            body {
+                margin: 0;
+            }
+            .container {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                box-shadow: none;
+            }
+        }
     </style>
 </head>
 <body>
