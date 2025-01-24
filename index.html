@@ -1,800 +1,170 @@
-<!DOCTYPE html
-  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Ramananda Panda - Full Stack Developer | MEAN | MERN</title>
-  <style type="text/css" id="static">
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    font,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      outline: 0;
-      font-size: 100%;
-      vertical-align: baseline;
-      background: transparent
-    }
-    body {
-      background: #FFFFFF;
-    }
-
-    a img {
-      border: none
-    }
-
-    /*START content disc style for LI*/
-    div#document ul,
-    div#document li {
-      list-style: none;
-      margin: 0 0 0 8px;
-      padding: 0
-    }
-
-    div#document ul li {
-      position: relative;
-      margin: 0 0 0 5px
-    }
-
-    div#document ul li:before {
-      content: '\2022';
-      font-size: 9px;
-      position: absolute;
-      left: -13px;
-      top: 0
-    }
-
-    /*END content disc style for LI*/
-
-    /*START Image treatment for LI
-        div#document ul{list-style-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAADNJREFUeNpiYCAAtIB4OxDfAOIoZIm9QPwfiv8AMT8TVOIvLqMMgPgqEL8F4ky8lgIEGAC+Fgk0YKVkbwAAAABJRU5ErkJggg==")}
-        div#document ul,div#document li{margin:0 0 0 3px;padding:0}
-        div#document ul li{margin:0 0 0 11px;padding:0 0 0 3px}
-        END Image treatment for LI*/
-
-    .clear {
-      clear: both;
-      height: 0
-    }
-
-    br.clear {
-      line-height: 0
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0
-    }
-
-    table.skills,
-    .table_wrapper {
-      width: 100%;
-      margin-top: 0
-    }
-
-    table.skills th,
-    table.skills td {
-      width: 20%;
-      text-align: center
-    }
-
-    table.skills th {
-      text-decoration: underline
-    }
-
-    table.skills .skillname,
-    table.skills .skillrating {
-      text-align: left;
-      width: 35%
-    }
-
-    table.skills .skillrating {
-      width: 20%
-    }
-
-    table.skills .skillyears,
-    table.skills .skilllast {
-      width: 19%
-    }
-
-    table.skills .pad1 {
-      width: 5%
-    }
-
-    table.skills .pad2,
-    table.skills .pad3 {
-      width: 1%
-    }
-
-    .paddedline {
-      display: block
-    }
-
-    div#document {
-      color: #4a4a4a;
-      line-height: 16px;
-      font-variant-ligatures: none
-    }
-
-    div#document .parentContainer {
-      display: table;
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 28px
-    }
-
-    .name {
-      font-weight: bold;
-      padding: 0;
-      font-size: 16px;
-      line-height: 28px;
-      text-align: left;
-      letter-spacing: 1px;
-      text-transform: uppercase
-    }
-
-    div.address {
-      text-align: left
-    }
-
-    div.address .txtBold+.field {
-      margin-left: 3px
-    }
-
-    div#document div.heading {
-      font-weight: bold;
-      font-size: 18px;
-      text-transform: uppercase;
-      position: relative
-    }
-
-    div#document div.heading:before {
-      content: "\2758";
-      color: #B8B8B8;
-      position: absolute;
-      font-size: 12px;
-      font-weight: bold
-    }
-
-    div#document div.sectiontitle {
-      padding-left: 13px;
-      letter-spacing: 1px
-    }
-
-    .left-box {
-      padding-right: 20px;
-      display: table-cell;
-      overflow: hidden
-    }
-
-    .right-box {
-      padding-left: 15px;
-      display: table-cell;
-      vertical-align: top
-    }
-
-    .left-box>.section:first-child {
-      padding-top: 0 !important
-    }
-
-    .right-box>.section:first-child {
-      padding-top: 0 !important
-    }
-
-    div#document .septr:before {
-      content: "\2022";
-      font-size: 9px;
-      vertical-align: top;
-      padding-left: 2px;
-      padding-right: 2px
-    }
-
-    div#document .jobline ul {
-      margin-top: 6px
-    }
-
-    .degreeGap {
-      margin-top: 5px
-    }
-
-    .txtBold {
-      font-weight: bold
-    }
-
-    .txtItl {
-      font-style: italic
-    }
-
-    .sprtr {
-      margin: 0 3px
-    }
-
-    div#document div.topsection {
-      padding-bottom: 35px;
-      position: relative
-    }
-
-    div#document div.topsection:before {
-      background: #C6D6E3;
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      top: 0;
-      -khtml-opacity: .32;
-      -moz-opacity: .32;
-      -ms-filter: "alpha(opacity=32)";
-      filter: alpha(opacity=32);
-      filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0.32);
-      opacity: .32;
-    }
-
-    div.name,
-    div.address,
-    div#document .adnlLnks {
-      position: relative;
-      z-index: 2
-    }
-  </style>
-  <style type="text/css" id="dynamic">
-    div#document {
-      line-height: 13px;
-      margin: auto;
-    }
-
-    div#document table {
-      line-height: 13px
-    }
-
-    div#document.pagesize {
-      width: 700px
-    }
-
-    div#document.vmargins {
-      padding-bottom: 40px
-    }
-
-    div#document.hmargins {
-      padding-left: 40px;
-      padding-right: 40px
-    }
-
-    div#document .section {
-      padding-top: 15px
-    }
-
-    div#document div.topsection .section {
-      padding-top: 0 !important
-    }
-
-    div#document div.paragraph {
-      margin-top: 10px;
-      clear: both;
-    }
-
-    div#document div.firstparagraph {
-      margin-top: 0
-    }
-
-    div#document .singlecolumn,
-    div#document .maincolumn {
-      margin-left: 0px
-    }
-
-    div#document .adnlLnks .singlecolumn {
-      margin-left: 0 !important
-    }
-
-    div#document table.skills td {
-      padding-top: 7.5px
-    }
-
-    .fontsize {
-      font-size: 9px
-    }
-
-    .fontface {
-      font-family: "Century Gothic", Helvetica, sans-serif
-    }
-
-    div.name {
-      font-size: 16px;
-      line-height: 20px
-    }
-
-    div.address,
-    div.adnlLnks {
-      font-size: 9px;
-      line-height: 13px
-    }
-
-    div.address2 {
-      font-size: 9px;
-      line-height: 13px
-    }
-
-    div#document div.heading {
-      font-size: 10px;
-      line-height: 14px;
-      margin-bottom: 10px
-    }
-
-    div#document div.heading:before {
-      font-size: 13px
-    }
-
-    .left-box {
-      width: 400px
-    }
-
-    /*Full color bleed calculation*/
-    div#document div.topsection {
-      margin-left: -40px !important;
-      margin-right: -40px !important;
-      padding-left: 40px;
-      padding-right: 40px;
-      padding-top: 40px
-    }
-
-    div#document div.topsection:before {
-      background: #C6D6E3;
-    }
-
-    .techstack {
-      padding-left: 18px;
-      margin-bottom: 5px;
-    }
-
-    .techstack.left {
-      float: left;
-      width: 45%;
-    }
-
-    .techstack.right {
-      float: right;
-      width: 40%;
-    }
-
-    .techstack-head {
-      margin-left: -13px !important;
-      margin-top: 5px !important;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramananda Panda - Full Stack Developer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            color: #2c3e50;
+        }
+        .header p {
+            margin: 5px 0;
+            font-size: 16px;
+            color: #7f8c8d;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section ul li {
+            margin: 10px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+        .section ul li:before {
+            content: '\2022';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+            font-size: 16px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills span {
+            background: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .contact a {
+            text-decoration: none;
+            color: #3498db;
+        }
+    </style>
 </head>
-
 <body>
-  <div id="document" class="fontsize fontface vmargins hmargins linespacing pagesize">
-    <div class="topsection" id="CONTAINER_PARENT_0">
-      <div class="left-box" id="CONTAINER_0">
-        <div class="section notdraggable firstsection" id="SECTION_NAMEf7657261-eee7-4d6e-aecb-828f513138ed">
-          <div id="PARAGRAPH_f7657261-eee7-4d6e-aecb-828f513138ed_1" class="paragraph PARAGRAPH_NAME firstparagraph">
-            <div class="name">
-              <span class="field" dependency="FNAM" id="f7657261-eee7-4d6e-aecb-828f513138edFNAM1">Ramananda</span>
-              <span class="field" dependency="LNAM" id="f7657261-eee7-4d6e-aecb-828f513138edLNAM1">Panda</span>
-            </div>
-          </div>
+    <div class="container">
+        <div class="header">
+            <h1>Ramananda Panda</h1>
+            <p>Full Stack Developer | MEAN | MERN</p>
+            <p>Email: <a href="mailto:ramanandapanda92@gmail.com">ramanandapanda92@gmail.com</a> | Phone: +91-7619 577 977</p>
+            <p>LinkedIn: <a href="https://in.linkedin.com/in/ramananda-panda" target="_blank">linkedin.com/in/ramananda-panda</a> | GitHub: <a href="https://github.com/ramanandapanda" target="_blank">github.com/ramanandapanda</a></p>
         </div>
-      </div>
-      <div class="right-box" id="CONTAINER_1">
-        <div class="section SECTION_CNTC notdraggable" id="SECTION_CNTCe0a30602-c9c3-412b-ab96-e2dc0ced4d69">
-          <div id="PARAGRAPH_e0a30602-c9c3-412b-ab96-e2dc0ced4d69_1" class="paragraph PARAGRAPH_CNTC firstparagraph">
-            <div class="address">
-              <span class="txtBold">E: </span>
-              <span class="field" id="e0a30602-c9c3-412b-ab96-e2dc0ced4d69EMAI1">ramanandapanda92@gmail.com</span><br>
-              <span class="txtBold">M:</span>
-              <span class="field" id="e0a30602-c9c3-412b-ab96-e2dc0ced4d69HPHN1">+91-7619 577 977</span>
-              <br>
-              
-            </div>
-          </div>
+
+        <div class="section">
+            <h2>Professional Summary</h2>
+            <p>Industrious Senior Engineer with extensive experience in Golang, Node.js, Flutter, and PHP. Proven expertise in designing scalable systems, solving technical challenges, and leading cross-functional teams. Adept at delivering projects from concept to completion with measurable results.</p>
         </div>
-        <div class="section adnlLnks notdraggable" id="SECTION_ALNK3a9025ea-2a74-449b-ad23-14120d854ab3">
-          <div id="PARAGRAPH_3a9025ea-2a74-449b-ad23-14120d854ab3_1" class="paragraph firstparagraph">
-            <div class="singlecolumn">
-              <span dependency="LNK1" class="field"
-                id="3a9025ea-2a74-449b-ad23-14120d854ab3LNK11">https://in.linkedin.com/in/ramananda-panda</span><br>
-              <span dependency="LNK2" class="field"
-                id="3a9025ea-2a74-449b-ad23-14120d854ab3LNK21">https://github.com/ramanandapanda</span><br>
-              <span dependency="LNK3" class="field"
-                id="3a9025ea-2a74-449b-ad23-14120d854ab3LNK31">https://ramanandapanda.github.io/</span><br>
-            </div>
-          </div>
+
+        <div class="section">
+            <h2>Work Experience</h2>
+            <ul>
+                <li>
+                    <strong>Senior Engineer</strong> - Kaplan India Pvt Ltd (May 2021 - Present)<br>- Optimized system performance, improving scalability by 20% through refactoring.<br>- Worked on fixing Snyk and Orca vulnerabilities across the system.<br>
+                    - Led UI migration from Angular 12 to 17, enhancing maintainability and user experience.<br>
+                    - Created a whole new design system used across all frontend applications.<br>
+                    - Revamped CI/CD pipelines using EKS, GitHub Actions, and ArgoCD.<br>
+                    - Mentored a team of 10 developers and collaborated on full-stack projects.
+                </li>
+                <li>
+                    <strong>Senior Developer</strong> - Elatior Tech LLP Ltd (Aug 2019 - May 2021)<br>
+                    - Designed technology architecture for supply chain systems.<br>
+                    - Acted as a key stakeholder in strategic design decisions.<br>
+                    - Led cross-functional teams to deliver high-quality software products.
+                </li>
+                <li>
+                    <strong>Software Engineer</strong> - IT People Corporation Pvt. Ltd. (May 2017 - Jul 2019)<br>
+                    - Directed software design and collaborated closely with clients to deliver robust solutions.<br>
+                    - Led team initiatives to resolve critical bugs, ensuring smoother system operations.
+                </li>
+                <li>
+                    <strong>PHP Developer</strong> - KTree Computer Solutions India (Feb 2015 - Apr 2017)<br>
+                    - Implemented SEO strategies, improving search rankings for client websites.<br>
+                    - Developed and maintained task tracking systems using Node.js and Backbone.js.
+                </li>
+                <li>
+                    <strong>Software Trainee</strong> - Anika IT Solutions Pvt.Ltd (Sep 2013 - Feb 2015)<br>
+                    - Gained expertise in PHP frameworks and healthcare-based web solutions.<br>
+                    - Created and deployed 5 websites, delivering quality results within deadlines.
+                </li>
+            </ul>
         </div>
-      </div>
+
+        <div class="section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span>Golang</span>
+                <span>Node.js</span>
+                <span>Flutter</span>
+                <span>Next.js</span>
+                <span>PHP (Laravel)</span>
+                <span>React.js</span>
+                <span>Angular.js</span>
+                <span>Docker</span>
+                <span>AWS</span>
+                <span>Team Leadership</span>
+                <span>Project Management</span>
+                <span>Client Collaboration</span>
+                <span>Agile Methodologies</span>
+                <span>MySQL</span>
+                <span>PostgreSQL</span>
+                <span>MongoDB</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Accomplishments</h2>
+            <ul>
+                <li>Identified and solved critical security vulnerabilities, deploying multiple software patches.</li>
+                <li>Mentored 5 new employees, accelerating project delivery timelines.</li>
+                <li>Streamlined team workflows, improving productivity by 15%.</li>
+            </ul>
+        </div>
+
+        <div class="contact">
+            <p>Portfolio: <a href="https://ramanandapanda.github.io" target="_blank">ramanandapanda.github.io</a></p>
+        </div>
     </div>
-    <div class="parentContainer" id="CONTAINER_PARENT_1">
-      <div class="left-box" id="CONTAINER_2">
-        <div class="section" id="SECTION_SUMM8412a0e8-dca9-4d13-a6a3-827610682257">
-          <div class="heading">
-            <div id="SECTNAME_SUMM8412a0e8-dca9-4d13-a6a3-827610682257" class="sectiontitle">Professional Summary</div>
-          </div>
-          <div id="PARAGRAPH_8412a0e8-dca9-4d13-a6a3-827610682257_1" class="paragraph firstparagraph">
-            <div class="field singlecolumn" id="8412a0e8-dca9-4d13-a6a3-827610682257FRFM1">
-              <p>Industrious
-                Senior Engineer versed in Golang, Node.js, Flutter and PHP. History
-                includes testing, evaluating and solving System Design and Technical problems. Bringing
-                <font color="#0000FF">8</font> years of Software engineering expertise to execute projects from concept to delivery.</p>
-            </div>
-          </div>
-        </div>
-        <div class="section" id="SECTION_EXPRbf25138a-77a2-448e-9a5d-79748f5fb767">
-          <div class="heading">
-            <div id="SECTNAME_EXPRbf25138a-77a2-448e-9a5d-79748f5fb767" class="sectiontitle">Work History</div>
-          </div>
-          <div id="PARAGRAPH_bf25138a-77a2-448e-9a5d-79748f5fb767_1" class="paragraph firstparagraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="bf25138a-77a2-448e-9a5d-79748f5fb767COMP1">Kaplan India Pvt
-                  Ltd</span>
-                <span>- </span><span class="jobtitle txtBold txtItl"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JTIT1">Senior
-                  Engineer</span>
-                <br>
-                <span class="joblocation jobcity" id="bf25138a-77a2-448e-9a5d-79748f5fb767JCIT1">Bengaluru</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTA1">Karnataka</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTD1">05/2021</span><span>
-                  - </span><span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767EDDT1">Current</span>
-              </span>
-              <span class="jobline" id="bf25138a-77a2-448e-9a5d-79748f5fb767JDES1">
-                <ul>
-                  <li>Optimized system performance and improved scalability by 20% through refactoring and code optimization.</li>
-                  <li>Led the migration of an entire UI system from Angular 12 to 17, improving performance and maintainability. </li>
-                  <li>Developed migration strategies, conducted code reviews, and provided technical guidance to team members.</li>
-                  <li>Collaborating with multiple teams for both front and backend development</li>
-                  <ol class="techstack left">
-                    <li class="txtBold techstack-head">Technology Stack</li>
-                    <li>Golang </li>
-                    <li>Node.js</li>
-                    <li>GraphQL </li>
-                    <li>Angular.js </li>
-                    <li>React Native </li>
-                    <li>Amazon AWS </li>
-                    <li>Docker </li>
-                  </ol>
-                  <ol class="techstack right">
-                    <li class="txtBold techstack-head">Database Stack</li>
-                    <li>Postgres</li>
-                    <li>MongoDB</li>
-                    <li>MySql </li>
-                  </ol>
-                </ul>
-              </span>
-            </div>
-          </div>
-          <div id="PARAGRAPH_bf25138a-77a2-448e-9a5d-79748f5fb767_1" class="paragraph firstparagraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="bf25138a-77a2-448e-9a5d-79748f5fb767COMP1">Elatior Tech LLP
-                  Ltd</span>
-                <span>- </span><span class="jobtitle txtBold txtItl"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JTIT1">Senior Developer</span>
-                <br>
-                <span class="joblocation jobcity" id="bf25138a-77a2-448e-9a5d-79748f5fb767JCIT1">Bengaluru</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTA1">Karnataka</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTD1">08/2019</span><span> - </span><span class="jobdates"
-                  format="%m/%Y" id="bf25138a-77a2-448e-9a5d-79748f5fb767EDDT1">05/2021</span>
-              </span>
-              <span class="jobline" id="bf25138a-77a2-448e-9a5d-79748f5fb767JDES1">
-                <ul>
-                  <li>Managed a team of 10 developers</li>
-                  <li>I am a key stakeholder in the design decisions</li>
-                  <li>Desgined the complete technology architecture for a supply chain project.</li>
-                  <li>Collaborated with other stake holders to achieve and economise the product.</li>
-                  <li>Worked on blockchain solutions with a multi partner network.</li>
-                  <ol class="techstack left">
-                    <li class="txtBold techstack-head">Technology Stack</li>
-                    <li>Hyperledger Fabric (v1.4)</li>
-                    <li>Node.js</li>
-                    <li>React.js with Redux </li>
-                    <li>React Native </li>
-                    <li>Golang </li>
-                    <li>Amazon AWS </li>
-                    <li>Docker </li>
-                  </ol>
-                  <ol class="techstack right">
-                    <li class="txtBold techstack-head">Database Stack</li>
-                    <li>CouchDB</li>
-                    <li>Postgres</li>
-                    <li>MySql </li>
-                  </ol>
-                </ul>
-              </span>
-            </div>
-          </div>
-          <div id="PARAGRAPH_bf25138a-77a2-448e-9a5d-79748f5fb767_1" class="paragraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="bf25138a-77a2-448e-9a5d-79748f5fb767COMP1">IT People Corporation
-                  Pvt. Ltd.</span>
-                <span>- </span><span class="jobtitle txtBold txtItl"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JTIT1">Software Engineer</span>
-                <br>
-                <span class="joblocation jobcity" id="bf25138a-77a2-448e-9a5d-79748f5fb767JCIT1">Hyderabad</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTA1">Telangana</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTD1">05/2017</span><span> - </span><span class="jobdates"
-                  format="%m/%Y" id="bf25138a-77a2-448e-9a5d-79748f5fb767EDDT1">07/2019</span>
-              </span>
-              <span class="jobline" id="bf25138a-77a2-448e-9a5d-79748f5fb767JDES1">
-                <ul>
-                  <li>Directed software design and development while remaining focused on client needs.</li>
-                  <li>Worked closely with customers to efficiently resolve issues.</li>
-                  <li>Wrote clean, clear and well-tested code for various projects.</li>
-                  <li>Collaborated with other developers to identify and alleviate the number of bugs in the software.
-                  </li>
-                  <li>Worked on blockchain solutions with a multi partner network.</li>
-                  <ol class="techstack left">
-                    <li class="txtBold techstack-head">Technology Stack</li>
-                    <li>Hyperledger Fabric (v1.4)</li>
-                    <li>Node.js</li>
-                    <li>React Native </li>
-                    <li>Golang </li>
-                    <li>Docker </li>
-                    <li>Travis CI</li>
-                  </ol>
-                  <ol class="techstack right">
-                    <li class="txtBold techstack-head">Database Stack</li>
-                    <li>CouchDB</li>
-                    <li>MySql </li>
-                  </ol>
-                </ul>
-              </span>
-            </div>
-          </div>
-          <div id="PARAGRAPH_bf25138a-77a2-448e-9a5d-79748f5fb767_2" class="paragraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="bf25138a-77a2-448e-9a5d-79748f5fb767COMP2">KTree Computer
-                  Solutions India (P) Ltd.</span>
-                <span>- </span><span class="jobtitle txtBold txtItl" id="bf25138a-77a2-448e-9a5d-79748f5fb767JTIT2">PHP
-                  Developer</span>
-                <br>
-                <span class="joblocation jobcity" id="bf25138a-77a2-448e-9a5d-79748f5fb767JCIT2">Hyderabad</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTA2">Telangana</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTD2">02/2015</span><span> - </span><span class="jobdates"
-                  format="%m/%Y" id="bf25138a-77a2-448e-9a5d-79748f5fb767EDDT2">04/2017</span>
-              </span>
-              <span class="jobline" id="bf25138a-77a2-448e-9a5d-79748f5fb767JDES2">
-                <ul>
-                  <li>Implemented Search Engine Optimizations to improve search results and business flow.</li>
-                  <li>Coded 5 websites using PHP.</li>
-                  <li>Implemented a Employee task tracking system using nodejs,backbone.js,socket.js</li>
-                  <ol class="techstack left">
-                    <li class="txtBold techstack-head">Technology Stack</li>
-                    <li>PHP Yii2, Laravel</li>
-                    <li>Node.js</li>
-                    <li>Backbone.js</li>
-                    <li>Socket.io </li>
-                  </ol>
-                  <ol class="techstack right">
-                    <li class="txtBold techstack-head">Database Stack</li>
-                    <li>Mysql</li>
-                    <li>MongoDB</li>
-                  </ol>
-                </ul>
-              </span>
-            </div>
-          </div>
-          <div id="PARAGRAPH_bf25138a-77a2-448e-9a5d-79748f5fb767_3" class="paragraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="bf25138a-77a2-448e-9a5d-79748f5fb767COMP3">Anika IT Solutions
-                  Pvt.Ltd</span>
-                <span>- </span><span class="jobtitle txtBold txtItl"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JTIT3">Software Trainee</span>
-                <br>
-                <span class="joblocation jobcity" id="bf25138a-77a2-448e-9a5d-79748f5fb767JCIT3">Hyderabad</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTA3">Telangana</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y"
-                  id="bf25138a-77a2-448e-9a5d-79748f5fb767JSTD3">09/2013</span><span> - </span><span class="jobdates"
-                  format="%m/%Y" id="bf25138a-77a2-448e-9a5d-79748f5fb767EDDT3">02/2015</span>
-              </span>
-              <span class="jobline" id="bf25138a-77a2-448e-9a5d-79748f5fb767JDES3">
-                <ul>
-                  <li>Learned PHP, and Implemented health care based websites.</li>
-                  <li>Worked on condeigniter (PHP Framenowrk).</li>
-                  <li>Developed 5 web sites using PHP.</li>
-                  <ol class="techstack left">
-                    <li class="txtBold techstack-head">Technology Stack</li>
-                    <li>PHP (Codeigniter,MVC)</li>
-                    <li>JQuery</li>
-                    <li>Bootstrap </li>
-                  </ol>
-                  <ol class="techstack right">
-                    <li class="txtBold techstack-head">Database Stack</li>
-                    <li>MySql </li>
-                  </ol>
-                </ul>
-              </span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-      <div class="right-box" id="CONTAINER_3">
-        <div class="section" id="SECTION_HILT4b91ca36-360c-402b-a308-5693a959d77f">
-          <div class="heading">
-            <div id="SECTNAME_HILT4b91ca36-360c-402b-a308-5693a959d77f" class="sectiontitle">Skills</div>
-          </div>
-          <div id="PARAGRAPH_4b91ca36-360c-402b-a308-5693a959d77f_1" class="paragraph firstparagraph">
-            <div class="singlecolumn maincolumn">
-              <span class="paddedline" id="4b91ca36-360c-402b-a308-5693a959d77fSKC11">
-                <ul>
-                  <li>GoLang</li>
-                  <li>Node.js</li>
-                  <li>Flutter (Android / IOS)</li>
-                  <li>Next.js</li>
-                  <li>PHP (Laravel)</li>
-                  <li>REST APIs</li>
-                  <li>React.js</li>
-                  <li>AWS</li>
-                  <li>Github Actions</li>
-                  <li>Docker</li>
-                  <li>React Native</li>
-                  <li>Travis CI</li>
-                  <li>React Native (Android and IOS)</li>
-                  <li>Hyperledger Fabric (Node.js SDK)</li>
-                  <li>Angular.js</li>
-                  <li>JavaScript</li>
-                  <li>Quorum</li>
-                  <li>Solodity</li>
-                  <li>IBM CLoud CI/CD</li>
-                  
-                  <li>git</li>
-                </ul>
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="section" id="SECTION_ACCMbcde0e30-53ee-4989-b946-ebb375273a67">
-          <div class="heading">
-            <div id="SECTNAME_ACCMbcde0e30-53ee-4989-b946-ebb375273a67" class="sectiontitle">Accomplishments</div>
-          </div>
-          <div id="PARAGRAPH_bcde0e30-53ee-4989-b946-ebb375273a67_1" class="paragraph firstparagraph">
-            <div class="field singlecolumn" id="bcde0e30-53ee-4989-b946-ebb375273a67FRFM1">
-              <ul>
-              <li>Identified and solved serious security issues with multiple software patches.</li>
-                <li>Key contributor in the design and implementation of new features for Block-chain implementation on
-                  Asset Management.</li>
-                <li>Mentored 5 new employees to bring them up to speed on projects, resulting in quicker overall
-                  completion milestones.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="section" id="SECTION_EDUC88557577-4077-435e-81f9-cfb9324ebdea">
-          <div class="heading">
-            <div id="SECTNAME_EDUC88557577-4077-435e-81f9-cfb9324ebdea" class="sectiontitle">Education</div>
-          </div>
-          <div id="PARAGRAPH_88557577-4077-435e-81f9-cfb9324ebdea_1" class="paragraph firstparagraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="88557577-4077-435e-81f9-cfb9324ebdeaSCHO1">Vignan Institute Of
-                  Technology And Management(VITAM), Brahmapur</span>
-              </span>
-              <span class="paddedline">
-                <span class="joblocation jobcity" id="88557577-4077-435e-81f9-cfb9324ebdeaSCIT1">Ankushpur</span><span>,
-                </span>
-                <span class="joblocation jobstate" id="88557577-4077-435e-81f9-cfb9324ebdeaSSTA1">OD</span>
-                <span class="septr"></span>
-                <span class="jobdates" format="%m/%Y" dependency="GRYR"
-                  id="88557577-4077-435e-81f9-cfb9324ebdeaGRYR1">2013</span>
-              </span>
-              <span class="paddedline degreeGap">
-                <span class="degree txtBold txtItl" id="88557577-4077-435e-81f9-cfb9324ebdeaDGRE1">B.Tech</span><span>:
-                </span>
-                <span class="programline" id="88557577-4077-435e-81f9-cfb9324ebdeaSTUY1">Information Technology</span>
-                <span class="field" id="88557577-4077-435e-81f9-cfb9324ebdeaGRPA1"></span>
-              </span>
-              <span class="field" id="88557577-4077-435e-81f9-cfb9324ebdeaFRFM1"></span>
-            </div>
-          </div>
-          <div id="PARAGRAPH_88557577-4077-435e-81f9-cfb9324ebdea_2" class="paragraph">
-            <div class="singlecolumn">
-              <span class="paddedline">
-                <span class="companyname txtBold" id="88557577-4077-435e-81f9-cfb9324ebdeaSCHO2">Sanjay Memorial
-                  Institute Of Technology</span>
-              </span>
-              <span class="paddedline">
-                <span class="joblocation jobcity" id="88557577-4077-435e-81f9-cfb9324ebdeaSCIT2">Ganjam, OD</span>
-                <span class="joblocation jobstate" id="88557577-4077-435e-81f9-cfb9324ebdeaSSTA2"></span>
-
-                <span class="jobdates" format="%m/%Y" dependency="GRYR"
-                  id="88557577-4077-435e-81f9-cfb9324ebdeaGRYR2">2010</span>
-              </span>
-              <span class="paddedline degreeGap">
-                <span class="degree txtBold txtItl" id="88557577-4077-435e-81f9-cfb9324ebdeaDGRE2">Diploma</span><span>:
-                </span>
-                <span class="programline" id="88557577-4077-435e-81f9-cfb9324ebdeaSTUY2">Information Technology</span>
-                <span class="field" id="88557577-4077-435e-81f9-cfb9324ebdeaGRPA2"></span>
-              </span>
-              <span class="field" id="88557577-4077-435e-81f9-cfb9324ebdeaFRFM2"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </body>
-
 </html>
